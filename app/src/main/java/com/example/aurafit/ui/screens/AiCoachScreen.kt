@@ -111,9 +111,11 @@ fun AiCoachScreen(
                         placeholder = { Text("AIzaSy...") },
                         modifier = Modifier.weight(1f),
                         singleLine = true,
-                        colors = TextFieldDefaults.textFieldColors(
-                            containerColor = Color(0x0DFFFFFF),
-                            textColor = TextPrimary
+                        colors = TextFieldDefaults.colors(
+                            focusedContainerColor = Color(0x0DFFFFFF),
+                            unfocusedContainerColor = Color(0x0DFFFFFF),
+                            focusedTextColor = TextPrimary,
+                            unfocusedTextColor = TextPrimary
                         )
                     )
                     Spacer(modifier = Modifier.width(8.dp))
@@ -195,11 +197,13 @@ fun AiCoachScreen(
                 onValueChange = { inputText = it },
                 placeholder = { Text("Ask Aura anything...", color = TextMuted) },
                 modifier = Modifier.weight(1f),
-                colors = TextFieldDefaults.textFieldColors(
-                    containerColor = Color.Transparent,
+                colors = TextFieldDefaults.colors(
+                    focusedContainerColor = Color.Transparent,
+                    unfocusedContainerColor = Color.Transparent,
                     focusedIndicatorColor = Color.Transparent,
                     unfocusedIndicatorColor = Color.Transparent,
-                    textColor = TextPrimary
+                    focusedTextColor = TextPrimary,
+                    unfocusedTextColor = TextPrimary
                 ),
                 singleLine = true
             )

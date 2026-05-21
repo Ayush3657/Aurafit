@@ -148,8 +148,7 @@ fun NeuralAuraCore(
                 .drawBehind {
                     drawCircle(
                         brush = Brush.sweepGradient(
-                            colors = gradientColors,
-                            tileMode = TileMode.Repeated
+                            colors = gradientColors
                         ),
                         alpha = 0.65f
                     )
