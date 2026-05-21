@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.aurafit"
-    compileSdk = 35
+    compileSdk = 36
     defaultConfig {
         applicationId = "com.example.aurafit"
         minSdk = 24
